@@ -1,0 +1,44 @@
+.image_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 715px;
+  background-color: black;
+}
+
+.indiv_wrapper {
+  text-align: center;
+  height: 100%;
+  opacity: .7;
+}
+
+.indiv_wrapper:hover {
+  transition: .2s;
+  opacity: 1;
+}
+
+h1 {
+  display: inline-block;
+  margin-top: 240px;
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0.99;
+  letter-spacing: .2em;
+}
+
+// a {
+//   padding: 0;
+//   margin: 0;
+//   height: 0;
+// }
+
+.cakes {
+  @include render_image('https://homecookingadventure.com/images/recipes/caramel_mirror_cake_main.jpg');
+}
+
+.cookies {
+    @include render_image('https://www.handletheheat.com/wp-content/uploads/2013/10/Ultimate-Chocolate-Chip-Cookies-Square-1-550x550.jpg');
+  }
+
+.muffins {
+  @include render_image('https://myfoodbook.com.au/sites/default/files/styles/single_recipe/public/recipe_photo/P50a0d2c4_0.jpg')
+}
