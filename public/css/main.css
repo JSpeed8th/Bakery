@@ -11,20 +11,42 @@ li {
 .company_icon {
   padding: 20px 0; }
 
-a {
+.links {
   text-decoration: none;
   color: black; }
 
-a :hover {
+.links :hover {
   transition: .2s;
   background-color: gray;
   color: white; }
 
-.company_icon {
-  background-image: url("../../img/companyIcon.jpg");
+.home_image {
+  position: relative;
+  background-image: url("../../img/homeImage.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center; }
+  height: 707px; }
+
+.home_image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35); }
+
+.content_wrapper {
+  background-color: black; }
+
+.home_text {
+  color: #FFFFFF;
+  position: relative;
+  left: 35%;
+  top: 230px;
+  font-size: 4em;
+  margin: 0; }
 
 .image_wrapper {
   display: grid;
@@ -41,7 +63,7 @@ a :hover {
   transition: .2s;
   opacity: 1; }
 
-h1 {
+h2 {
   display: inline-block;
   margin-top: 240px;
   color: white;

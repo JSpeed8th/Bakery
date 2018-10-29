@@ -15,20 +15,21 @@ li {
   padding: 20px 0;
 }
 
-a {
+.links {
   text-decoration: none;
   color: black;
 }
 
-a :hover {
+.links :hover {
   transition: .2s;
   background-color: gray;
   color: white;
 }
 
 .company_icon {
-  background-image: url('../../img/companyIcon.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+  // background-image: url('../../img/companyIcon.jpg');
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-position: center;
+  // background-color: white;
 }
