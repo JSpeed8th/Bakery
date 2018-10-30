@@ -14,18 +14,16 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.35);
-}
-
-.content_wrapper {
-  background-color: black;
+    background: rgba(0,0,0,0.3);
 }
 
 .home_text {
     color: #FFFFFF;
     position: relative;
-    left: 35%;
+    left: 33%;
     top: 230px;
     font-size: 4em;
     margin: 0;
+    word-spacing: 20px;
+    letter-spacing: 2px;
 }

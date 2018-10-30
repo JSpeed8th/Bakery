@@ -17,6 +17,17 @@ end
 
 get "/cakes" do
   erb :cakes
+
+  class Cakes
+    attr_accessor :url
+    def initialize(price, description, url)
+      @price = price
+      @description = description
+      @url = url
+    end
+  end
+
+  @c1 = Cakes.new(18, 'Chocolate Silk Cake', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
 end
 
 get "/cookies" do

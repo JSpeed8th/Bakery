@@ -1,13 +1,28 @@
 .navbar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
+}
+
+.main_links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.social_media .links {
+  font-size: 12px;
+}
+
+.social_media {
+  padding-top: 19px;
+  word-spacing: 10px;
+
 }
 
 li {
   list-style-type: none;
   display: block;
-  // background-color: white;
   padding: 20px 0;
 }
 
@@ -15,7 +30,7 @@ li {
   padding: 20px 0;
 }
 
-.links {
+.links, .company_name {
   text-decoration: none;
   color: black;
 }
@@ -24,12 +39,4 @@ li {
   transition: .2s;
   background-color: gray;
   color: white;
-}
-
-.company_icon {
-  // background-image: url('../../img/companyIcon.jpg');
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  // background-position: center;
-  // background-color: white;
 }
