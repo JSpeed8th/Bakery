@@ -16,9 +16,8 @@ get "/contact" do
 end
 
 get "/cakes" do
-  erb :cakes
 
-  class Cakes
+  class Cake
     attr_accessor :url
     def initialize(price, description, url)
       @price = price
@@ -27,7 +26,12 @@ get "/cakes" do
     end
   end
 
-  @c1 = Cakes.new(18, 'Chocolate Silk Cake', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+  @cake1 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+  @cake2 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+  @cake3 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+  @cake4 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+
+    erb :cakes
 end
 
 get "/cookies" do

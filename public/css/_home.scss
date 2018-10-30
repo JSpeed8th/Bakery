@@ -1,6 +1,6 @@
 .home_image {
   position: relative;
-  background-image: url('../../img/homeImage.jpg');
+  background-image: url('../../img/homeImage2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -20,9 +20,10 @@
 .home_text {
     color: #FFFFFF;
     position: relative;
-    left: 33%;
-    top: 230px;
-    font-size: 4em;
+    display: inline-block;
+    left: 35%;
+    top: 250px;
+    font-size: 3.5em;
     margin: 0;
     word-spacing: 20px;
     letter-spacing: 2px;
