@@ -94,19 +94,19 @@ h2 {
   letter-spacing: .2em; }
 
 .cakes {
-  background-image: url("https://homecookingadventure.com/images/recipes/caramel_mirror_cake_main.jpg");
+  background-image: url("../../img/shopImages/cake.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200% 100%; }
 
 .cookies {
-  background-image: url("https://www.handletheheat.com/wp-content/uploads/2013/10/Ultimate-Chocolate-Chip-Cookies-Square-1-550x550.jpg");
+  background-image: url("../../img/shopImages/cookies.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200% 100%; }
 
 .muffins {
-  background-image: url("https://myfoodbook.com.au/sites/default/files/styles/single_recipe/public/recipe_photo/P50a0d2c4_0.jpg");
+  background-image: url("../../img/shopImages/muffins.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200% 100%; }
@@ -116,13 +116,68 @@ body {
   padding: 0;
   font-family: 'Lora', serif; }
 
+.cake_image_wrapper {
+  position: relative;
+  padding-top: 44px;
+  background-image: url("../../img/cakeImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 601px; }
+
+.cake_image_wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); }
+
+.cake_page_title {
+  font-family: 'Great Vibes', cursive;
+  border-top: 2px solid grey;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 3px; }
+
 .goods_wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 400px;
-  height: 400px;
-  margin-left: 100px; }
+  grid-template-columns: repeat(4, 1fr);
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: scroll; }
+
+.cake_card {
+  position: relative;
+  display: inline-block;
+  width: 323px;
+  height: 380px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+img {
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  margin-bottom: -4px; }
+
+.description {
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 auto; }
+
+.cake_name {
+  background-color: #e5e5e5;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0; }
 
 .contact_image {
   height: 707px;
@@ -167,5 +222,14 @@ body {
 
 .body {
   height: 230px; }
+
+.cookie_page_title {
+  font-family: 'Great Vibes', cursive;
+  border-top: 2px solid grey;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 3px; }
 
 /*# sourceMappingURL=main.css.map */

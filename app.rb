@@ -18,18 +18,29 @@ end
 get "/cakes" do
 
   class Cake
-    attr_accessor :url
-    def initialize(price, description, url)
-      @price = price
+    attr_accessor :name, :description, :price, :image
+    def initialize(name, description, price, image)
+      @name = name
       @description = description
-      @url = url
+      @price = price
+      @image = image
     end
   end
 
-  @cake1 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
-  @cake2 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
-  @cake3 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
-  @cake4 = Cake.new(6, 'super good and expensive', "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/1200px-2ChocolateChipCookies.jpg")
+  @cake_array = []
+
+  def class_push(name, description, price, image)
+    @new_cake = Cake.new(name, description, price, image)
+    @cake_array.push(@new_cake)
+  end
+
+  class_push('Charlotte Royale', 'A charlotte is a type of dessert or trifle that can be served hot or cold. It is also referred to as an "icebox cake". Bread, sponge cake or biscuits/cookies are used to line a mold, which is then filled with a fruit puree or custard.', '30.00', '../../img/cakeImages/charlotteRoyale.jpg')
+
+  class_push('Tiramisu Cake', 'Made of a tender vanilla cake soaked with coffee syrup, topped with creamy mascarpone frosting, and dusted with cocoa powder. Just like classic tiramisu in cake form!', '30.00', '../../img/cakeImages/tiramisuCake.png')
+
+  class_push('Hazelnut Dacquoise', 'French dessert of layers of hazelnut meringue, hazelnut praline, chocolate ganache and a coffee custard filling.', '40.00', '../../img/cakeImages/hazelnutDacquoise.jpg')
+
+  class_push('Prinsesstårta', 'A princess cake is a traditional Swedish layer cake or torte consisting of alternating layers of airy sponge cake, jam, pastry cream, and a thick-domed layer of whipped cream. This is topped by marzipan, giving the cake a smooth rounded top.', '60.00', '../../img/cakeImages/prinsesstarta.png')
 
     erb :cakes
 end

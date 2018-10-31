@@ -11,3 +11,34 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+@mixin goods_header() {
+  font-family: 'Great Vibes', cursive;
+  border-top: 2px solid grey;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+@mixin card_styling() {
+  position: relative;
+  display: inline-block;
+  width: 323px;
+  height: 380px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+@mixin goods_wrapper() {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: scroll;
+}

@@ -43,13 +43,13 @@ h2 {
 // }
 
 .cakes {
-  @include render_image('https://homecookingadventure.com/images/recipes/caramel_mirror_cake_main.jpg');
+  @include render_image('../../img/shopImages/cake.jpg');
 }
 
 .cookies {
-    @include render_image('https://www.handletheheat.com/wp-content/uploads/2013/10/Ultimate-Chocolate-Chip-Cookies-Square-1-550x550.jpg');
+    @include render_image('../../img/shopImages/cookies.jpg');
   }
 
 .muffins {
-  @include render_image('https://myfoodbook.com.au/sites/default/files/styles/single_recipe/public/recipe_photo/P50a0d2c4_0.jpg')
+  @include render_image('../../img/shopImages/muffins.jpg');
 }
