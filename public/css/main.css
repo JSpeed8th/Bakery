@@ -136,7 +136,6 @@ body {
 
 .cake_page_title {
   font-family: 'Great Vibes', cursive;
-  border-top: 2px solid grey;
   margin: 0;
   padding: 15px 0;
   text-align: center;
@@ -165,7 +164,9 @@ body {
 img {
   border-radius: 5px 5px 0 0;
   margin: 0;
-  margin-bottom: -4px; }
+  margin-bottom: -4px;
+  margin-top: 10px;
+  width: 300px; }
 
 .description {
   font-size: 14px;
@@ -225,7 +226,6 @@ img {
 
 .cookie_page_title {
   font-family: 'Great Vibes', cursive;
-  border-top: 2px solid grey;
   margin: 0;
   padding: 15px 0;
   text-align: center;
