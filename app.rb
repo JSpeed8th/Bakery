@@ -15,22 +15,23 @@ get "/contact" do
   erb :contact
 end
 
-get "/cakes" do
-
-  class Cake
-    attr_accessor :name, :description, :price, :image
-    def initialize(name, description, price, image)
-      @name = name
-      @description = description
-      @price = price
-      @image = image
-    end
+class Bake
+  attr_accessor :name, :description, :price, :image
+  def initialize(name, description, price, image)
+    @name = name
+    @description = description
+    @price = price
+    @image = image
   end
+end
+
+
+get "/cakes" do
 
   @cake_array = []
 
   def class_push(name, description, price, image)
-    @new_cake = Cake.new(name, description, price, image)
+    @new_cake = Bake.new(name, description, price, image)
     @cake_array.push(@new_cake)
   end
 
@@ -46,6 +47,21 @@ get "/cakes" do
 end
 
 get "/cookies" do
+
+  @cookie_array = Array.new
+  def class_push(name, description, price, image)
+    @new_cookie = Bake.new(name, description, price, image)
+    @cookie_array.push(@new_cookie)
+  end
+
+  class_push('Chocolate Chunk', 'This tasty favorite is packed with chunks of rich, soft chocolate that melts in your mouth.', '3.00', '../../img/cookieImages/chocoChunk.jpg')
+
+  class_push('Double Chocolate Chunk', 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.', '3.00', '../../img/cookieImages/doubleChoco.jpg')
+
+  class_push('Chocolate Peanut Butter Cup', "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.", '3.00', '../../img/cookieImages/chocoPeanut.jpg')
+
+  class_push('Double Chocolate Mint', "Our delicious chocolate cookie baked with rich chocolate chunks and mint chocolate chips.", '3.00', '../../img/cookieImages/mintChoco.jpg')
+
   erb :cookies
 end
 

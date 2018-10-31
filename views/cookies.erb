@@ -1,1 +1,13 @@
 <h1 class="cookie_page_title">Cookies</h1>
+<div class="cookie_image_wrapper">
+  <div class="goods_wrapper">
+    <% @cookie_array.each do |x| %>
+    <div class='cookie_card'>
+      <img height= "190px" src=<%= x.image %> >
+      <p class= "cookie_name"><%= x.name %></p>
+      <p class= "description"><%= x.description %></p>
+      <!-- <p>$<%= x.price %></p> -->
+    </div>
+    <% end %>
+  </div>
+</div>
