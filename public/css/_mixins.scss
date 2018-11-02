@@ -14,7 +14,7 @@
 
 @mixin goods_header() {
   font-family: 'Great Vibes', cursive;
-  border-top: 1px dotted #e5e3e4;
+  border-top: 1px dotted #e2cdbe;
   margin: 0;
   padding: 15px 0;
   text-align: center;
@@ -25,13 +25,13 @@
 @mixin card_styling() {
   position: relative;
   display: inline-block;
-  width: 323px;
-  height: 380px;
+  width: 280px;
+  height: 370px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .95);
 }
 
 @mixin goods_wrapper() {
@@ -46,7 +46,7 @@
 }
 
 @mixin card_titles() {
-  background-color: #e5e5e5;
+  background-color: #e0d6ce;
   font-size: 1.1em;
   font-weight: bold;
   margin: 0;
@@ -59,6 +59,6 @@
   margin: 0;
   margin-bottom: -4px;
   margin-top: 10px;
-  width: 300px;
-  height: 190px;
+  width: 260px;
+  height: 160px;
 }

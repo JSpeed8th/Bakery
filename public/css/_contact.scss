@@ -1,18 +1,29 @@
 .contact_image {
-  height: 707px;
-  background-image: url('../../img/contactImage.jpg');
+  position: relative;
+  height: $main-image-height;
+  background-image: url('../../img/cookieImage2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
+.contact_image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+
 .contact_wrapper {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 35%;
   padding-top: 20px;
   margin: 0 auto;
-  height: 500px;
+  height: 430px;
   width: 30%;
   border-radius: 3px;
   background-color: rgba(227, 227, 227, .8);
@@ -20,11 +31,12 @@
 
 .contact_message {
   display: block;
+  font-family: 'Great Vibes', cursive;
   text-align: center;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.9em;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .subject, .body, .email, .submit {
@@ -45,5 +57,5 @@
 }
 
 .body {
-  height: 230px;
+  height: 200px;
 }
