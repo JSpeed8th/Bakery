@@ -1,3 +1,50 @@
 .muffin_page_title {
   @include goods_header();
 }
+
+.muffin_image_wrapper {
+  position: relative;
+  padding-top: 44px;
+  background-image: url('../../img/muffinImage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: $secondary-image-height;
+}
+
+.muffin_image_wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.goods_wrapper {
+@include goods_wrapper();
+}
+
+.muffin_image_wrapper {
+  background-color: grey;
+}
+
+.muffin_card {
+  @include card_styling();
+}
+
+img{
+  @include images_specs();
+}
+
+.muffin_name {
+  @include card_titles();
+}
+
+.description {
+  font-size: 14px;
+  padding: 5px 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+}

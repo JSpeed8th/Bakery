@@ -14,7 +14,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.15);
 }
 
 .contact_wrapper {
@@ -24,9 +24,10 @@
   padding-top: 20px;
   margin: 0 auto;
   height: 430px;
-  width: 30%;
+  // width: 30%;
+  width: 380px;
   border-radius: 3px;
-  background-color: rgba(227, 227, 227, .8);
+  background-color: rgba(227, 227, 227, .85);
 }
 
 .contact_message {

@@ -49,6 +49,7 @@ end
 get "/cookies" do
 
   @cookie_array = Array.new
+
   def class_push(name, description, price, image)
     @new_cookie = Bake.new(name, description, price, image)
     @cookie_array.push(@new_cookie)
@@ -66,6 +67,22 @@ get "/cookies" do
 end
 
 get "/muffins" do
+
+  @muffin_array = Array.new
+
+  def class_push(name, description, price, image)
+    @new_muffin = Bake.new(name, description, price, image)
+    @muffin_array.push(@new_muffin)
+  end
+
+  class_push('Chocolate Chunk', 'This tasty favorite is packed with chunks of rich, soft chocolate that melts in your mouth.', '3.00', '../../img/muffinImages/blueberryMuffin.jpg')
+
+  class_push('Double Chocolate Chunk', 'This cookie is double the fun with chunks of smooth chocolate inside a moist chocolate cookie.', '3.00', '../../img/muffinImages/chocoMuffin.jpg')
+
+  class_push('Chocolate Peanut Butter Cup', "This colossal treat is Loaded with chunks of Reese's peanut butter cups and baked into a peanut butter cookie.", '3.00', '../../img/muffinImages/pecanPieMuffin.jpg')
+
+  class_push('Double Chocolate Mint', "Our delicious chocolate cookie baked with rich chocolate chunks and mint chocolate chips.", '3.00', '../../img/muffinImages/pumpkinMuffin.jpg')
+
   erb :muffins
 end
 

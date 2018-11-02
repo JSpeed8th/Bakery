@@ -1,1 +1,13 @@
 <h1 class="muffin_page_title">Our Scrumptious Muffins</h1>
+
+<div class="muffin_image_wrapper">
+  <div class="goods_wrapper">
+    <% @muffin_array.each do |x| %>
+    <div class='muffin_card'>
+      <img height= "190px" src=<%= x.image %> >
+      <p class= "muffin_name"><%= x.name %></p>
+      <p class= "description"><%= x.description %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
