@@ -1,7 +1,7 @@
 .image_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 707px;
+  height: $main-image-height;
   background-color: black;
 }
 
