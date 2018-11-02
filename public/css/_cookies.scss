@@ -5,21 +5,21 @@
 .cookie_image_wrapper {
   position: relative;
   padding-top: 44px;
-  background-image: url('../../img/cookieImage.jpeg');
+  background-image: url('../../img/cookieImage2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 592px;
+  height: $secondary-image-height;
 }
 
-.cake_image_wrapper:before {
+.cookie_image_wrapper:before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.2);
 }
 
 .goods_wrapper {
