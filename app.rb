@@ -107,3 +107,8 @@ get "/thanks" do
 
   erb :thanks
 end
+
+get "/aboutus" do
+
+  erb :aboutus
+end

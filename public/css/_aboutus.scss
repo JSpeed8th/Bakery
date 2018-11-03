@@ -1,0 +1,23 @@
+.aboutus_page_title {
+  @include goods_header();
+}
+
+.aboutus_image_wrapper {
+  position: relative;
+  padding-top: 44px;
+  background-image: url('../../img/extra2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  height: $secondary-image-height;
+}
+
+.aboutus_wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}

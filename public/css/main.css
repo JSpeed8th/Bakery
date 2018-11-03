@@ -551,10 +551,10 @@ img {
 .cookie_image_wrapper {
   position: relative;
   padding-top: 44px;
-  background-image: url("../../img/extra.jpg");
+  background-image: url("../../img/extra2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 120%;
   height: 555px; }
 
 .cookie_image_wrapper:before {
@@ -684,6 +684,33 @@ img {
   padding: 5px 10px;
   padding-top: 20px;
   margin: 0 auto; }
+
+.aboutus_page_title {
+  font-family: 'Great Vibes', cursive;
+  border-top: 1px dotted #e2cdbe;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 3px; }
+
+.aboutus_image_wrapper {
+  position: relative;
+  padding-top: 44px;
+  background-image: url("../../img/extra2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  height: 555px; }
+
+.aboutus_wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); }
 
 footer {
   width: 100%;
