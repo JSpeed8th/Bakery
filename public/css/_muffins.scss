@@ -8,7 +8,7 @@
   background-image: url('../../img/muffinImage.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 120%;
   height: $secondary-image-height;
 }
 
@@ -47,4 +47,10 @@ img{
   padding: 5px 10px;
   padding-top: 20px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1039px) {
+  .goods_wrapper {
+    box-shadow: 3px 0px 5px black;
+  }
 }

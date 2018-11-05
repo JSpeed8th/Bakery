@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  grid-column-gap: 10px;
+  height: 90px;
 }
 
 .main_links {
@@ -17,17 +19,12 @@
 .social_media {
   padding-top: 37px;
   word-spacing: 10px;
-
 }
 
 li {
   list-style-type: none;
   display: block;
   padding: 37px 0;
-}
-
-.company_icon {
-  padding: 20px 0;
 }
 
 .links, .company_name {
@@ -39,4 +36,20 @@ li {
   transition: .2s;
   background-color: #e2cdbe;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .company_name {
+    display: block;
+    padding: 6px 0;
+    padding-bottom: 15px;
+    margin: 0 auto;
+  }
+  li, .social_media {
+    padding: 0;
+  }
 }

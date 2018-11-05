@@ -28,7 +28,6 @@
   width: 280px;
   height: 370px;
   margin: 0 auto;
-  margin-top: 20px;
   text-align: center;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .95);
@@ -43,6 +42,7 @@
   margin-top: 50px;
   overflow: scroll;
   border-radius: 5px;
+  height: 370px;
 }
 
 @mixin card_titles() {

@@ -12,7 +12,7 @@
   height: $secondary-image-height;
 }
 
-.aboutus_wrapper:before {
+.aboutus_image_wrapper:before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,4 +20,31 @@
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,0.2);
+}
+
+.aboutus_card {
+  position: absolute;
+  top: 70px;
+  left: 36%;
+  padding-top: 20px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 430px;
+  // width: 30%;
+  width: 380px;
+  border-radius: 3px;
+  background-color: rgba(227, 227, 227, .85);
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutus_card {
+    left: 28%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .aboutus_card {
+    left: 13%;
+  }
 }

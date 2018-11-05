@@ -27,7 +27,7 @@
   opacity: 1;
 }
 
-h2 {
+.shop_title {
   color: #FFF;
   position: relative;
   display: inline-block;
@@ -35,12 +35,6 @@ h2 {
   font-size: 2.5rem;
   letter-spacing: .2em;
 }
-
-// a {
-//   padding: 0;
-//   margin: 0;
-//   height: 0;
-// }
 
 .cakes {
   @include render_image('../../img/shopImages/cake.jpg');
@@ -52,4 +46,10 @@ h2 {
 
 .muffins {
   @include render_image('../../img/shopImages/muffins.jpg');
+}
+
+@media only screen and (max-width: 600px) {
+  .shop_title {
+    font-size: 1.5rem;
+  }
 }

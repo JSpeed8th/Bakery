@@ -28,3 +28,9 @@
     word-spacing: 20px;
     letter-spacing: 2px;
 }
+
+@media only screen and (max-width: 600px) {
+  .home_text {
+    font-size: 2em;
+  }
+}

@@ -1,7 +1,12 @@
+.contact_page_title {
+  @include goods_header();
+}
+
 .contact_image {
   position: relative;
-  height: $main-image-height;
-  background-image: url('../../img/cookieImage2.jpg');
+  padding-top: 44px;
+  height: $secondary-image-height;
+  background-image: url('../../img/cookieImage.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -19,8 +24,8 @@
 
 .contact_wrapper {
   position: absolute;
-  top: 120px;
-  left: 35%;
+  top: 70px;
+  left: 36%;
   padding-top: 20px;
   margin: 0 auto;
   height: 430px;
@@ -28,16 +33,6 @@
   width: 380px;
   border-radius: 3px;
   background-color: rgba(227, 227, 227, .85);
-}
-
-.contact_message {
-  display: block;
-  font-family: 'Great Vibes', cursive;
-  text-align: center;
-  color: black;
-  font-size: 1.9em;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .subject, .body, .email, .submit {
@@ -59,4 +54,16 @@
 
 .body {
   height: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact_wrapper {
+    left: 28%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .contact_wrapper {
+    left: 13%;
+  }
 }
