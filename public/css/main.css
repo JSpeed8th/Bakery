@@ -715,6 +715,7 @@ img {
 footer {
   width: 100%;
   background-color: white;
-  height: 42px; }
+  height: 27px;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
